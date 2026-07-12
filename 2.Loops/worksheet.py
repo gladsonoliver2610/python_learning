@@ -1,3 +1,4 @@
+# 2.a
 #1
 # num=int(input("enter a number:"))
 # if num%2==0:
@@ -56,15 +57,15 @@
 # print("you are noteligible to vote because you are under 18")
 
 # 5
-age=int(input("Enter your age:"))
-citizenship=input("Are you an Indian citizen?: ")
-if age >= 18:
-    if citizenship=="yes":
-        print("You are eligible to vote in India.")
-    else:
-        print("You are not eligible to vote because you are not an Indian citizen.")
-else:
-    print("You are not eligible to vote because you are under 18 years of age.")
+# age=int(input("Enter your age:"))
+# citizenship=input("Are you an Indian citizen?: ")
+# if age >= 18:
+#     if citizenship=="yes":
+#         print("You are eligible to vote in India.")
+#     else:
+#         print("You are not eligible to vote because you are not an Indian citizen.")
+# else:
+#     print("You are not eligible to vote because you are under 18 years of age.")
 
 # 6
 # amount=int(input("enter your amount to be withdrawn:"))
@@ -91,3 +92,31 @@ else:
 #         print("incorrect pin")
 # else:
 #     print("insufficient balance")
+
+# 2.b
+# 1
+# for i in range(1,11):
+#     print(i)
+
+# 2
+# num=int(input("enter a number:"))
+# for i in range(1,11):
+#     print(f"{num} * {i} = {num*i}")
+
+# 3
+# num=int(input("enter a number:"))
+# for i in range(1,21):
+#     print(i)
+#     if i==num==13:
+#         break
+    
+# 4
+# for i in range(1,21):
+#     if i%3==0:
+#        continue
+#     print(i)
+
+# 5
+# N=int(input("enter a positive integer N:"))
+# for i in range(1,N+1):
+#     print(i)

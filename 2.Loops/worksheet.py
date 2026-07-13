@@ -120,3 +120,50 @@
 # N=int(input("enter a positive integer N:"))
 # for i in range(1,N+1):
 #     print(i)
+
+#  2.c
+# 1
+# secert=int(input("enter the secret number:"))
+# match secert:
+#     case 7:
+#         print("congratulations! you guessed it")
+#     case _:
+#         print("Try again!")
+
+# 2
+# x=1
+# even=0
+# odd=0
+# while x<=10:
+#     n=int(input("enter an integer:"))
+#     if n%2==0:
+#         even+=1
+#     else:
+#         odd+=1
+#     x+=1
+# print("number of even numbers:",even) 
+# print("number of odd numbers:",odd)   
+
+# 3
+# n=int(input("enter a positive integer:"))
+# x=0
+# while n>0:
+#     x+=1
+#     n=n//10
+# print("number of digits:",x)
+
+# 4
+# a=int(input("enter a number:"))
+# b=int(input("enter a number:"))
+# operator=input("enter a operator:")
+# match operator:
+#     case "+":
+#         print("result=",a+b)
+#     case "-":
+#         print("result=",a-b)
+#     case "*":
+#         print("result=",a*b)
+#     case "/":
+#         print("result=",a/b)
+#     case _:
+#         print("enter a valid number!")

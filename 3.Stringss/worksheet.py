@@ -89,24 +89,15 @@
 
 # 3.b
 # 1
-# string_fruit=["apple","banana","orange"]
-# print("string:",string_fruit)
-# integer=[10,20,30]
-# print("integer:",integer)
-# mixed=[10,"apple",3.14,]
-# print("mixed:",mixed)
-# nexted=[[1,2],[3,4],[5,6]]
-# print("nexted:",nexted)
+# mixed=[10,"apple",3.14,[1,2],[3,4]]
+# print("mixed:",mixed[3][0])
 # 2
-# a=[[1,2],
-#    [3,4]]
-# b=[[5,6],
-#    [7,8]]
+# a=[[1,2],[3,4]]
+# b=[[5,6],[7,8]]
 # c=[[0,0],[0,0]]
 # for i in range(2):
 #     for j in range(2):
-#         for k in range(2):
-#             c[i][j] += a[i][k] * b[k][j]
+#         c[i][j] += a[i][j] * b[i][j]
 # print("answer:")
 # for row in c:
 #     print(row)
@@ -122,8 +113,8 @@
 # student1=[80,75,70]
 # student2=[75,70,80]
 # student3=[70,80,75]
-# first=[student1[0],student2[0],student3[0]]
-# print("marks of the first subjects:",first)
+# largest=max(student1[1],student2[2],student3[0])
+# print("mark of the topper student:",largest)
 # 6
 # number=[12,45,7,89,23]
 # largest=number[0]
@@ -152,9 +143,20 @@
 # print("average:", average)
 # 9
 # numbers=[2,4,2,5,2,7,8]
-# search=4
+# search=2
 # count=0
 # for num in numbers:
 #     if num == search:
 #          count+=1
-# print(search, "append", count, "time")
+# print("searching:",search, "| repeated:",count,"times")
+# 10
+numbers=[12,45,7,89,23]
+largest=numbers[0]
+secondlargest=numbers[0]
+for i in numbers:
+    if i>largest:
+        largest=i
+for i in numbers:
+    if i>secondlargest and i!=largest:
+        secondlargest=i
+print("second largest:",secondlargest)

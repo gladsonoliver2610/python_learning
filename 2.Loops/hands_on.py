@@ -57,3 +57,27 @@
 #         print("chicken")
 #     case _ :
 #         print("something wrong (please try again)")
+
+# students=["vijay","dhoni","kholi"]
+# # for i in students:
+# #     print(i)
+# for i in range(1):
+#     print(students[2])
+
+# x=range(0,20,5)
+# print(list(x))
+# # for i in x:
+# #  print(i)
+
+# a=10
+# b=20
+# c=30
+# d=40
+# e=200
+# print({a,b,c,d})
+
+# l=[a,b,c,d]
+# t=(a,b,c,d)
+# s={a,b,c,d}
+# s.add(e)
+# print(s)

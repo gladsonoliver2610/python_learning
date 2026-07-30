@@ -150,13 +150,122 @@
 #          count+=1
 # print("searching:",search, "| repeated:",count,"times")
 # 10
-numbers=[12,45,7,89,23]
-largest=numbers[0]
-secondlargest=numbers[0]
-for i in numbers:
-    if i>largest:
-        largest=i
-for i in numbers:
-    if i>secondlargest and i!=largest:
-        secondlargest=i
-print("second largest:",secondlargest)
+# numbers=[12,45,7,89,23]
+# largest=numbers[0]
+# secondlargest=numbers[0]
+# for i in numbers:
+#     if i>largest:
+#         largest=i
+# for i in numbers:
+#     if i>secondlargest and i!=largest:
+#         secondlargest=i
+# print("second largest:",secondlargest)
+# 3.c
+# 1
+# inventory={'pen':50,'book':20,'pencil':100}
+# inventory['note']=45
+# inventory.pop('pen')
+# print(inventory)
+# 2
+# marks={'raja':95,'john':45,'mary':78,'david':30}
+# count=0
+# for mark in marks.values():
+#     if mark>=50:
+#         count+=1
+# print("number of students passed:",count)
+# 3
+# items=['apple','banana','apple','orange','banana','apple']
+# freq={}
+# for num in items:
+#     if num in freq:
+#         freq[num]+=1
+#     else:
+#         freq[num]=1
+# print(freq)
+# 4
+# python_students={"bobby","john","mary","david"}
+# java_students={"mary","david","sam","peter"}
+# print("both course:",python_students.intersection(java_students))
+# print("python course:",python_students.difference(java_students))
+# print("java course:",java_students.difference(python_students))
+# print("all the course:",python_students.union(java_students)) 
+# 5
+# dict1={"a":1,"b":2,"c":3}
+# dict2={"b":4,"d":5}
+# dict1.update(dict2)
+# print(dict1)
+# 6
+# courses=["python","java","python","c","java"]
+# unique=tuple(set(courses))
+# print(unique)
+# 7
+# students={"joe":[85,90,95],"john":[70,75,80],"mary":[92,94,96]}
+# highest=""
+# max=0
+# for i in students:
+#     avg=sum(students[i])/len(students[i])
+#     if avg>max:
+#         max=avg
+#         highest=i
+# print("highest average:",highest)
+# print("average:",max)
+# 8
+# words=["cat","apple","dog","banana","bat","car"]
+# result={}
+# for word in words:
+#     length=len(word)
+#     if length not in result:
+#         result[length]=[]
+#     result[length].append(word)
+# print(result)
+# 9
+# sentence="god is good god is powerful god is love"
+# words=sentence.lower().split()
+# count={}
+# for i in words:
+#     if i in count:
+#         count[i]+=1
+#     else:
+#         count[i]=1
+# maxi=max(count,key=count.get)
+# print("most frequent word:",maxi)
+# print("count:",count[maxi])
+# 10
+# phone_book={}
+# while True:
+#
+#     print("menu choice \n 1:add\n 2:search \n 3:delete \n 4:display \n 5:exit")
+
+#     choice=int(input("enter your choice:"))
+#     match choice:
+
+#         case 1:
+#             name=input("enter name:")
+#             number=input("enter phone number:")
+#             phone_book[name]=number
+#             print("contact added successfully!")
+#         case 2:
+#             name=input("enter name to search:")
+#             if name in phone_book:
+#                 ptint(name,":", phone_book[name])
+#             else:
+#                 print("contact not found")
+#         case 3:
+#             name=input("enter name to delete:")
+#             if name in phone_book:
+#                 del phone_book[name]
+#                 print("contact deleted successfully")
+#             else:
+#                 print("contact not found")
+#         case 4:
+#             if len(phone_book)==0:
+#                 print("phonebook is empty")
+#             else:
+#                 print("\ncontacts:")
+#                 for name, number in phone_book.items():
+#                     print(name, ":", number)
+#         case 5:
+#             print("existing phonebook...")
+#             break
+#         case _:
+#             print("invalid choice, please try again")

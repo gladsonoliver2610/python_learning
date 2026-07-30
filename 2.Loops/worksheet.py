@@ -167,3 +167,137 @@
 #         print("result=",a/b)
 #     case _:
 #         print("enter a valid number!")
+
+#    2.d
+# 1
+# a=int(input("enter the number:"))
+# b=a//10
+# c=a%10
+# print("the sum of two number:",b+c)
+
+# 2
+# N=int(input("enter a number:"))
+# sum=0
+# for i in range(1,N+1):
+#     sum=sum+i**i
+#     print("sum=",sum)
+
+# 3
+# n=int(input("enter the number of values:"))
+# for i in range(n):
+#     num=int(input("enter the number:"))
+#     sum=i+num
+# average=sum//n
+# print("average=",average)
+
+# 4
+# for i in range(1,6):
+#     print("table",i)
+#     for j in range(1,10):
+#      print(i,"*",j,"=", i*j)
+#     print()
+
+# 5
+# a=[11,23,50]
+# if a[0]>a[1]:
+#     if a[0]>a[2]:
+#       print("a is greatest")
+#     else:
+#         print("c is greatest")
+# else:
+#     if a[1]>a[2]:
+#         print("b is greatest")
+#     else:
+#         print("c is greatest")
+
+# 6
+# r=[" a "," b "," c "," d "]
+# for i in range(4):
+#         print(r[i]*(i+1))
+
+# 7
+# pin=2610
+# for i in range(3):
+#   per=int(input("enter the pin:"))
+#   if per==pin:
+#     print("correct pin!")
+#     break
+#   else:
+#     print("wrong pin")
+# if per!=pin:
+#       print("account locked")
+
+# 8
+# petrol=int(input("enter how much petrol you have:"))
+# n=1
+# dist=0
+# while n<=petrol:
+#     dist=dist+50
+#     n=n+1
+# print("bike can run",dist,"km")
+
+# 9 (doubt...)
+# 10 (doubt...)
+
+# 5 ##(for practise)##
+# a=int(input("enter 1st number:"))
+# b=int(input("enter 2nd number:"))
+# c=int(input("enter 3rd number:"))
+# if a>b:
+#     if a>c:
+#         print("1st is greatest")
+#     else: 
+#         print("3rd is greatest")
+# else:
+#     if b>c:        
+#        print("2nd is greatest")
+#     else :
+#        print("3rd is greatest")
+
+
+# a = 33
+# b = 8
+# c = 1
+
+# if a > b and a > c:
+#     print("a is the greatest")
+# elif b > a and b > c:
+#     print("b is the greatest")
+# else:
+#     print("c is the greatest")
+
+# 9 (for practise):
+# for num in range(100,1000):
+#     digits=[int(d)for d in str(num)]
+#     total=sum(d** 3 for d in digits)
+#     if total==num:
+#         print(f"{num}->{digits[0]}^3 + {digits[1]}^3 + {digits[2]}^3 = {num}")
+# num=int(input("enter a number:"))
+# # sum=0
+# d1=num//10
+# # sum=sum+d1**3
+# d2=num%10
+# # sum=sum+d2**3
+# print(d1**3+d2**3)
+
+# 9
+# for num in range(100,1000):
+#     sum=0
+#     for i in str(num):
+#         sum=sum+int(i)**3
+#     if sum==num:
+#         print("its a amstrong number",sum)
+
+# 10 (leet code)
+# n=16
+# result=[]
+# for i in range(1,n+1):
+#     if i%3==0 and i%5==0:
+#         result.append("fizzbuzz")
+#     elif i%3==0:
+#         result.append("fizz")
+#     elif i%5==0:
+#         result.append("buzz")
+#     else:
+#         result.append(str(i))
+# print(result)

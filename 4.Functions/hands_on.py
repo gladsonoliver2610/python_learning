@@ -30,3 +30,23 @@
 #     return print_descend(n-1)
 # n=5
 # print_descend(n)
+
+# count=0  # to track the number of times func is called
+# def print_descend(n):
+#     global count
+#     count +=1
+#     if n==0: #base case
+#         count=0
+#         return
+#     print(f"call count ={count} n= {n}")
+#     print_descend(n-1) #recursive case
+#     #location where return stmt start executing
+#     count+=1
+#     print(f"return count ={count} n={n}")
+#     return
+
+# n=5
+# print_descend(n)
+
+marks= lambda x: x*100/40
+print(marks(35))

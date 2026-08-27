@@ -1,7 +1,7 @@
 # 4.a
-#1
+# 1
 # def even_odd(num):
-#     if num%2== 0:
+#     if num%2==0:
 #         print("even")
 #     else:
 #         print("odd")
@@ -21,12 +21,16 @@
 #     if num>1:
 #         for i in range(2,num):
 #             if num%i==0:
-#                 print("not prime")
+#               #  print(f"{num} is not prime")
 #                 break
 #         else:
-#             print("prime")
+#             print(num, end
+#                   =" ")
 # num=int(input("enter a number:"))
-# prime_number(num)
+
+# for i in range(1,100):
+#     prime_number(i)
+
 #3 ( i took this from automation, so i have some doubts uncle)
 # def prime_numbers_upto_100():
 #     primes = []
@@ -40,16 +44,16 @@
 #             primes.append(num)
 #     return primes
 # print(prime_numbers_upto_100())
-#4
+# 4
 # def palindrome(string):
 #     if string==string[::-1]:
-#         print("it is a palindrome")
+#         print("it is a palindrome",string[])
 #     else:
 #         print("it is not a palindrome")
 #     return string
 # string=input("enter a string:")
 # palindrome(string)
-#5 ( uncle i understood how to use function but i dont know how to do this question)
+#5 ( uncle i understood how to use recursive function but i dont know how to do this question)
 # def reverse_number(num):
 #     reversed_num=0
 #     while num>0:
@@ -67,13 +71,30 @@
 #             max_num = num
 #     return max_num
 # numbers=[1,2,3,4,76,0]
-# print("maximum number:", find_max(numbers))
+# print("maximum number:", find_max(numbers))   
 #7
 # def rotate_list(items,k):
-#     k = k % len(items)  
+#     k = k%len(items)  
 #     return items[-k:] + items[:-k]
 # print(rotate_list([1,2,3,4,5], 2))  
 #8 ( uncle i cant able to understand this question can u explain it to me in the next class...?)
+# def merge_intervals(intervals):
+#     intervals.sort()
+    
+#     result = [intervals[0]]
+
+#     for i in range(1, len(intervals)):
+#         current = intervals[i]
+#         previous = result[-1]
+
+#         if current[0] <= previous[1]:
+#             previous[1] = current[1]
+#         else:
+#             result.append(current)
+
+#     return result
+# print(merge_intervals([[1, 3], [2, 6], [8, 10], [9, 12]]))
+# Output: [[1, 6], [8, 12]]
 #9
 # def factorial(n):
 #     if n==0 or n==1:
@@ -89,3 +110,24 @@
 #     return total
 # print(list_sum([1,2,3,4,5]))
 # (hence i have completed the worksheet but still i have some doubts uncle, can u please explain it to me in the next class...?)
+
+# def list_sum(numbers):
+#     if len(numbers) == 0:
+#         return 0
+
+#     return numbers[0] + list_sum(numbers[1:])
+
+# print(list_sum([1, 2, 3, 4, 5]))
+#4b
+#1
+# def missing_number(n):
+#     for i in range(1, len(n) + 1):
+#         if i not in n:
+#             return i
+# print(missing_number([1, 2, 3, 5]))  
+#2
+def is_anagram(n):
+    num= 123
+    return sorted(str(num)) == sorted(str(n))
+n1 = int(input("Enter a 3-digit number: "))
+print(is_anagram(n1))

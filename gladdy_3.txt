@@ -1,3 +1,1 @@
 1.hello everyone
- 2.my name is gladson
- 3.iam learnimg python
